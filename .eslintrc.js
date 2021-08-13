@@ -6,7 +6,7 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
 
   rules: {
@@ -16,15 +16,15 @@ module.exports = {
     // Enable prettier rules
     'prettier/prettier': 'error',
     'comma-dangle': [
-      'error',
+      'warn',
       {
         arrays: 'never',
         objects: 'never',
         imports: 'never',
         exports: 'never',
-        functions: 'never'
-      }
+        functions: 'never',
+      },
     ],
-    semi: ['error', 'always']
-  }
+    semi: ['error', 'always'],
+  },
 };

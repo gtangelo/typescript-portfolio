@@ -1,13 +1,27 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: `Gabriel Ting`,
     description: `My personal portfolio website`,
     author: `@gtangelo`,
-    siteUrl: `https://gtangelo.com/`
+    siteUrl: `https://gtangelo.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        components: path.join(__dirname, 'src/components'),
+        templates: path.join(__dirname, 'src/templates'),
+        assets: path.join(__dirname, 'src/assets'),
+        src: path.join(__dirname, 'src'),
+        pages: path.join(__dirname, 'src/pages'),
+        data: path.join(__dirname, 'src/data'),
+      },
+    },
+
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
@@ -37,13 +51,13 @@ module.exports = {
         stages: ['develop'],
         options: {
           emitWarning: true,
-          failOnError: false
-        }
-      }
+          failOnError: false,
+        },
+      },
     },
-    `gatsby-plugin-gatsby-cloud`
+    `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ]
+  ],
 };

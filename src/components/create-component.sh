@@ -11,14 +11,17 @@ create_component() {
   touch $component_file
   cat > $index_file <<EOL
 import $component_name from './$component_name';
+
 export default $component_name;
 EOL
 
   cat > $component_file <<EOL
 import React from 'react';
+
 const $component_name: React.FC = () => {
   return <div></div>;
 };
+
 export default $component_name;
 EOL
   else

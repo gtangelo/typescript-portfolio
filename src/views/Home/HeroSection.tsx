@@ -47,12 +47,11 @@ const HeroSection: React.FC = () => {
               Aspiring&nbsp;
               <Typewriter
                 options={{
-                  strings: ['software engineer.', 'student.'],
+                  strings: ['software engineer', 'student'],
                   autoStart: true,
                   loop: true,
                   delay: 50,
                   deleteSpeed: 40,
-                  pauseFor: 2000,
                 }}
               />
             </Typography>

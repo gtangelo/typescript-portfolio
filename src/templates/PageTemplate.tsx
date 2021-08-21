@@ -2,7 +2,7 @@ import Footer from 'components/Footer';
 import Navbar from 'components/Navbar';
 import React from 'react';
 import styled from 'styled-components';
-import 'assets/styles/global.css';
+// import 'assets/styles/global.css';
 
 const Page = styled.div`
   main {

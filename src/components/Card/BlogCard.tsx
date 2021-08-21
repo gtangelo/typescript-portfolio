@@ -6,7 +6,7 @@ const CardWrapper = styled.div`
   width: 100%;
   height: 300px;
   border-radius: 5px;
-  background-color: #333;
+  background-color: #00315f;
   padding: 25px 20px;
 `;
 
@@ -24,13 +24,9 @@ interface BlogCardProps {
 const BlogCard: React.FC<BlogCardProps> = () => {
   return (
     <CardWrapper>
-      <Typography component="h5" variant="h5">
-        Title
-      </Typography>
+      <Typography variant="h5">Title</Typography>
       <CardBody>
-        <Typography component="p" variant="subtitle1">
-          hit there
-        </Typography>
+        <Typography variant="subtitle1">hi there</Typography>
       </CardBody>
     </CardWrapper>
   );

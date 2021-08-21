@@ -9,24 +9,14 @@ interface NavItemProps {
 }
 
 const NavItemWrapper = styled.li`
-  all: unset;
-
-  a {
-    all: unset;
-  }
-
-  a:hover {
-    cursor: pointer;
-  }
+  list-style: none;
 `;
 
 const NavItem: React.FC<NavItemProps> = ({ name, href }) => {
   return (
     <NavItemWrapper>
       <Link to={href}>
-        <Typography variant="h6" component="h6">
-          {name}
-        </Typography>
+        <Typography variant="h6">{name}</Typography>
       </Link>
     </NavItemWrapper>
   );

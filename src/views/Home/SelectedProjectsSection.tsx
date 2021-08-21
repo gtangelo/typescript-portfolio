@@ -3,26 +3,10 @@ import { ProjectCard } from 'components/Card';
 import TitleHeader from 'components/TitleHeader';
 import React from 'react';
 import styled from 'styled-components';
+import PROJECTS from 'data/projects.ts';
 
 const HighlighSection = styled.section`
   padding: 30px 0;
-`;
-
-const HightlightWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  & > * {
-    margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: 786px) {
-    & > * {
-      width: 31%;
-    }
-  }
 `;
 
 const SelectedProjectsSection: React.FC = () => {
@@ -30,16 +14,23 @@ const SelectedProjectsSection: React.FC = () => {
     <HighlighSection>
       <Container>
         <TitleHeader title="Selected Projects" />
-        <HightlightWrapper>
-          {new Array(3).fill(0).map((i) => (
+      </Container>
+      <Container>
+        {PROJECTS.slice(0, 3).map((project, index) => (
+          <Box my={4}>
             <ProjectCard
-              key={i}
-              title="RESTful API"
-              description="hi there"
-              img="https://gabrielting.xyz/traceback-banner.png"
+              key={index}
+              position={index}
+              title={project.title}
+              description={project.description}
+              img={project.img}
+              categories={project.categories}
+              github={project.github}
+              deploy={project.deploy}
+              link={project.link}
             />
-          ))}
-        </HightlightWrapper>
+          </Box>
+        ))}
       </Container>
     </HighlighSection>
   );

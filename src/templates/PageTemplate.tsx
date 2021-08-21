@@ -10,9 +10,9 @@ const Page = styled.div`
   }
 `;
 
-import { ThemeProvider, createTheme } from '@material-ui/core/styles';
+import { ThemeProvider, createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
-const theme = createTheme({
+let theme = createTheme({
   typography: {
     fontFamily: [
       '-apple-system',
@@ -61,6 +61,8 @@ const theme = createTheme({
     },
   },
 });
+
+theme = responsiveFontSizes(theme);
 
 const PageTemplate: React.FC = ({ children }) => {
   return (

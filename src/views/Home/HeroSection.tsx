@@ -5,14 +5,34 @@ import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
 
 const HeroSectionBg = styled.section`
-  background-color: #fafafa;
+  background-color: #001f3c;
 `;
 
 const HeroWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 70vh;
+  min-height: 75vh;
+`;
+
+const HeroTypewriter = styled.div`
+  * {
+    display: inline;
+  }
+`;
+
+const HeroBio = styled.div`
+  max-width: 600px;
+  width: 100%;
+  padding: 20px 0;
+`;
+
+const HeroBtns = styled.div`
+  margin: 25px 0;
+  margin-left: -15px;
+  & > * {
+    margin-left: 15px;
+  }
 `;
 
 const HeroSection: React.FC = () => {
@@ -20,14 +40,10 @@ const HeroSection: React.FC = () => {
     <HeroSectionBg>
       <Container>
         <HeroWrapper>
-          <Typography component="h4" variant="h4">
-            Hello, World! I'm
-          </Typography>
-          <Typography component="h1" variant="h1">
-            Gabriel Ting
-          </Typography>
-          <Typography component="h3" variant="h3">
-            <Box display="flex">
+          <Typography variant="h5">Hello, World! I'm</Typography>
+          <Typography variant="h1">Gabriel Ting</Typography>
+          <HeroTypewriter>
+            <Typography variant="h3">
               Aspiring&nbsp;
               <Typewriter
                 options={{
@@ -39,16 +55,22 @@ const HeroSection: React.FC = () => {
                   pauseFor: 2000,
                 }}
               />
-            </Box>
-          </Typography>
-          <Typography component="p" variant="subtitle1">
-            I am a UNSW computer science student in my penultimate year aspiring to become as a
-            frontend web developer!
-          </Typography>
-          <div>
-            <Button>Get In Touch</Button>
-            <Button>Resume</Button>
-          </div>
+            </Typography>
+          </HeroTypewriter>
+          <HeroBio>
+            <Typography variant="subtitle1">
+              I am a UNSW computer science student in my penultimate year aspiring to become as a
+              fullstack software engineer!
+            </Typography>
+          </HeroBio>
+          <HeroBtns>
+            <a href="mailto:gabrielting.info@gmail.com">
+              <Button>Get In Touch</Button>
+            </a>
+            <a href="/resume.pdf" download>
+              <Button>View Resume</Button>
+            </a>
+          </HeroBtns>
         </HeroWrapper>
       </Container>
     </HeroSectionBg>

@@ -14,7 +14,6 @@ const Header = styled.h2`
   white-space: nowrap;
   margin: 10px 0px 30px;
   padding-right: 30px;
-  color: #333;
   text-transform: uppercase;
 
   &::after {
@@ -23,7 +22,7 @@ const Header = styled.h2`
     width: 100%;
     height: 1px;
     margin-left: 15px;
-    background-color: #233554;
+    background-color: #9c9c9c;
   }
 `;
 

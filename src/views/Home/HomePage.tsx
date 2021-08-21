@@ -4,14 +4,21 @@ import PageTemplate from 'templates/PageTemplate';
 import SelectedProjectsSection from './SelectedProjectsSection';
 import RecentPostsSection from './RecentPostsSection';
 import AboutMeSection from './AboutMeSection';
+import { Box } from '@material-ui/core';
 
 const HomePage: React.FC = () => {
   return (
     <PageTemplate>
       <HeroSection />
-      <AboutMeSection />
-      <SelectedProjectsSection />
-      <RecentPostsSection />
+      <Box id="about">
+        <AboutMeSection />
+      </Box>
+      <Box id="projects">
+        <SelectedProjectsSection />
+      </Box>
+      {/* <Box id="blog">
+        <RecentPostsSection />
+      </Box> */}
     </PageTemplate>
   );
 };

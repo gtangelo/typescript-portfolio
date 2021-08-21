@@ -2,11 +2,48 @@ html, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --navbar-height: 70px;
 }
 
 html, body {
   min-height: 100vh;
-  background-color: #fff;
-  color: #222;
+  background-color: #001A33;
+  color: #d5dae7;
   font-family: sans-serif;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #318dda;
+}
+
+/* img {
+  filter: grayscale(80%);
+  transition: 3ms all ease;
+}
+
+img:hover {
+  filter: none;
+  transition: 3ms all ease;
+} */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  --dark-slate: #495670;
+  --navy: #0a192f;
+  background-color: var(--dark-slate);
+  border: 3px solid var(--navy);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--navy);
 }

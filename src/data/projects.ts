@@ -1,8 +1,8 @@
-import traceback from 'assets/images/projects/traceback-banner.png';
-import flockr from 'assets/images/projects/flockr-banner.png';
-import portfolio from 'assets/images/projects/portfolio-banner.png';
-import secsoc from 'assets/images/projects/secsoc-banner.png';
-import enactus from 'assets/images/projects/enactus-banner.png';
+import traceback from 'assets/images/projects/traceback.png';
+import flockr from 'assets/images/projects/flockr.png';
+import portfolio from 'assets/images/projects/portfolio.png';
+import secsoc from 'assets/images/projects/secsoc.png';
+import enactus from 'assets/images/projects/enactus.png';
 
 const REACTJS = {
   title: 'ReactJS',
@@ -66,6 +66,13 @@ const PROJECTS = [
     deploy: 'https://flockr-web.herokuapp.com/',
   },
   {
+    title: 'Enactus UNSW Website',
+    description: "Help redesign and update UNSW Enactus Society's website",
+    img: enactus,
+    categories: [REACTJS, HTML_CSS, UX_UI_DESIGN],
+    deploy: 'https://enactusunsw.org/',
+  },
+  {
     title: 'My Portfolio Website',
     description: 'Created my portfolio website using ReactJS and my own custom CSS styling.',
     img: portfolio,
@@ -74,13 +81,7 @@ const PROJECTS = [
     github: 'https://github.com/gtangelo/typescript-portfolio',
     // deploy: 'https://gtangelo.com',
   },
-  {
-    title: 'Enactus UNSW Website',
-    description: "Help redesign and update UNSW Enactus Society's website",
-    img: enactus,
-    categories: [REACTJS, HTML_CSS, UX_UI_DESIGN],
-    deploy: 'https://enactusunsw.org/',
-  },
+
   {
     title: 'Security Society Website',
     description: 'Redesign landing page and improve existing features',

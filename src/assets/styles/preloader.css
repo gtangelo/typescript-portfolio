@@ -19,7 +19,7 @@ body.preloader_active #preloader {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #0F1624;
+  background-color: #0f1624;
   z-index: 9999;
   display: flex;
   overflow: hidden;

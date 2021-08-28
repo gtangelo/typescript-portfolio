@@ -3,6 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { Link } from 'gatsby';
+import { Category } from 'types/ProjectCategory';
 
 const CardWrapper = styled.div`
   width: 100%;
@@ -14,7 +15,7 @@ const CardImg = styled.img`
   border-radius: 30px;
 `;
 
-const CardContent = styled.div`
+const CardContent = styled.div<{ position: number }>`
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -55,25 +56,25 @@ const CardExternalLinks = styled.div`
   }
 `;
 
-const Category = styled.div`
-  background-color: ${(props) => props.color};
+const CategoryWrapper = styled.div<{ colour: string }>`
+  background-color: ${(props) => props.colour};
   padding: 3px 20px;
   border-radius: 15px;
   color: #333;
 `;
 
-interface CardInfo {
+interface ProjectCardProps {
   title: string;
   description: string;
-  categories: string[];
+  categories: Category[];
   github?: string;
   deploy?: string;
   img: string;
-  link: string;
+  link?: string;
   position: number;
 }
 
-const ProjectCard: React.FC<CardInfo> = ({
+const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   github,
@@ -96,9 +97,9 @@ const ProjectCard: React.FC<CardInfo> = ({
             <Typography variant="h5">{title}</Typography>
             <CardCatergories>
               {categories.map((category) => (
-                <Category color={category.colour} key={category.title}>
+                <CategoryWrapper colour={category.colour} key={category.title}>
                   <Typography variant="subtitle2">{category.title}</Typography>
-                </Category>
+                </CategoryWrapper>
               ))}
             </CardCatergories>
             <Typography variant="body1" align="inherit">

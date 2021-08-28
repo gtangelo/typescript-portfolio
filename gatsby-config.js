@@ -58,6 +58,7 @@ module.exports = {
     //     },
     //   },
     // },
+    'gatsby-plugin-eslint',
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-theme-material-ui`,
     // this (optional) plugin enables Progressive Web App + Offline functionality

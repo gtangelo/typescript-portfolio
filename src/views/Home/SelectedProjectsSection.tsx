@@ -16,11 +16,11 @@ const SelectedProjectsSection: React.FC = () => {
         <TitleHeader title="Selected Projects" />
       </Container>
       <Container>
-        {PROJECTS.slice(0, 3).map((project) => (
+        {PROJECTS.slice(0, 3).map((project, index) => (
           <Box my={4} key={project.title}>
             <ProjectCard
               key={project.title}
-              position={project.title}
+              position={index}
               title={project.title}
               description={project.description}
               img={project.img}

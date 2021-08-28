@@ -3,55 +3,56 @@ import flockr from 'assets/images/projects/flockr.png';
 import portfolio from 'assets/images/projects/portfolio.png';
 import secsoc from 'assets/images/projects/secsoc.png';
 import enactus from 'assets/images/projects/enactus.png';
+import { Category, Project } from 'types/ProjectCategory';
 
-const REACTJS = {
+const REACTJS: Category = {
   title: 'ReactJS',
   colour: '#5ED3F3',
 };
 
-const HTML_CSS = {
+const HTML_CSS: Category = {
   title: 'HTML/CSS',
   colour: '#E96228',
 };
 
-const UX_UI_DESIGN = {
+const UX_UI_DESIGN: Category = {
   title: 'UX/UI',
   colour: '#8A8AF6',
 };
 
-const PYTHON = {
+const PYTHON: Category = {
   title: 'Python',
   colour: '#FFCE3B',
 };
 
-const FLASK = {
+const FLASK: Category = {
   title: 'Flask',
   colour: '#387AB1',
 };
 
-const TESTING = {
+const TESTING: Category = {
   title: 'Testing',
   colour: '#2EA44F',
 };
 
-const DOCKER = {
+const DOCKER: Category = {
   title: 'Docker',
   colour: '#4285F4',
 };
 
-const CTF = {
+const CTF: Category = {
   title: 'CTF',
   colour: '#EA4335',
 };
 
-const PROJECTS = [
+const PROJECTS: Project[] = [
   {
     title: 'Traceback',
     description:
       'Traceback is a Google Chrome extension which records the time user spends on different tasks.',
     img: traceback,
     categories: [REACTJS],
-    // link: '/traceback',
+    link: '/traceback',
     github: 'https://github.com/gtangelo/traceback',
     deploy: '',
   },
@@ -61,7 +62,7 @@ const PROJECTS = [
       'Backend API project that is used to serve a communication tool application similar to Slack called Flockr.',
     img: flockr,
     categories: [PYTHON, FLASK, TESTING],
-    // link: '/flockr',
+    link: '/flockr',
     github: 'https://github.com/gtangelo/flockr-backend',
     deploy: 'https://flockr-web.herokuapp.com/',
   },
@@ -79,7 +80,7 @@ const PROJECTS = [
     categories: [REACTJS, HTML_CSS, UX_UI_DESIGN],
     link: '/website',
     github: 'https://github.com/gtangelo/typescript-portfolio',
-    // deploy: 'https://gtangelo.com',
+    deploy: 'https://gtangelo.com',
   },
 
   {

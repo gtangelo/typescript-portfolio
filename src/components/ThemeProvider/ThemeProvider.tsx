@@ -68,14 +68,15 @@ let theme = createTheme({
     },
     body1: {
       fontFamily: bodyFont,
-      fontSize: '1.1rem',
-      lineHeight: 2.1,
-      marginBottom: '20px',
+      fontWeight: 500,
+      fontSize: '1rem',
+      marginBottom: '5px',
     },
     body2: {
       fontFamily: bodyFont,
-      fontSize: '1rem',
-      lineHeight: 1.65,
+      fontWeight: 500,
+      fontSize: '0.9rem',
+      marginBottom: '5px',
     },
   },
 });

@@ -3,8 +3,8 @@ import Button from 'components/Button';
 import ROUTES from 'data/routes';
 import React from 'react';
 import styled from 'styled-components';
-import NavItem from './NavItem';
 import { Container } from '@material-ui/core';
+import NavItem from './NavItem';
 
 const NavbarWrapper = styled.header`
   height: var(--navbar-height);
@@ -38,14 +38,14 @@ const Navbar: React.FC = () => {
       <Container>
         <NavbarHeader>
           <Link to="/">
-            <img src="/favicon.ico" width="40px" />
+            <img src="/favicon.ico" alt="logo" width="40px" />
           </Link>
           <NavItemsList>
             {ROUTES.map((route) => (
-              <NavItem name={route.name} href={route.href} />
+              <NavItem name={route.name} href={route.href} key={route.name} />
             ))}
             <a download href="/resume.pdf">
-              <Button onClick={() => console.log('download resume')}>Resume</Button>
+              <Button>Resume</Button>
             </a>
           </NavItemsList>
         </NavbarHeader>

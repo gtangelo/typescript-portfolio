@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from '@material-ui/core';
+import { Container, Typography } from '@material-ui/core';
 import Button from 'components/Button';
 import React from 'react';
 import styled from 'styled-components';

@@ -1,8 +1,8 @@
+import React from 'react';
 import { Box, Container } from '@material-ui/core';
 import Button from 'components/Button';
 import { BlogCard } from 'components/Card/';
 import TitleHeader from 'components/TitleHeader';
-import React from 'react';
 import styled from 'styled-components';
 
 const BlogPostsWrapper = styled.div`
@@ -22,13 +22,13 @@ const BlogPostsWrapper = styled.div`
   }
 `;
 
-const RecentPostsSection = () => {
+const RecentPostsSection: React.FC = () => {
   return (
     <Container>
       <TitleHeader title="Recent Blog Posts" />
       <BlogPostsWrapper>
         {new Array(3).fill(0).map(() => (
-          <BlogCard />
+          <BlogCard key="test" />
         ))}
       </BlogPostsWrapper>
       <Box pb={7} pt={3} display="flex" justifyContent="center">

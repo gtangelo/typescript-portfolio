@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from '@material-ui/core';
+import { Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import styled from 'styled-components';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
@@ -96,7 +96,7 @@ const ProjectCard: React.FC<CardInfo> = ({
             <Typography variant="h5">{title}</Typography>
             <CardCatergories>
               {categories.map((category) => (
-                <Category color={category.colour}>
+                <Category color={category.colour} key={category.title}>
                   <Typography variant="subtitle2">{category.title}</Typography>
                 </Category>
               ))}
@@ -106,12 +106,12 @@ const ProjectCard: React.FC<CardInfo> = ({
             </Typography>
             <CardExternalLinks>
               {github && (
-                <a href={github} target="_blank">
+                <a href={github} target="_blank" rel="noreferrer">
                   <FaGithub size="1.8rem" />
                 </a>
               )}
               {deploy && (
-                <a href={deploy} target="_blank">
+                <a href={deploy} target="_blank" rel="noreferrer">
                   <FaExternalLinkAlt size="1.8rem" />
                 </a>
               )}

@@ -18,7 +18,7 @@ const AboutMeInfo = styled.div`
   padding: 20px;
 `;
 
-const AboutMeSection = () => {
+const AboutMeSection: React.FC = () => {
   return (
     <Container maxWidth="md">
       <AboutMeGrid container>

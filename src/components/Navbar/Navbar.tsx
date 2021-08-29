@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import Button from 'components/Button';
 import ROUTES from 'data/routes';
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Container, useTheme, useMediaQuery } from '@material-ui/core';
 import HamburgerMenu from 'components/HamburgerMenu';
@@ -36,7 +36,7 @@ const NavItemsList = styled.ul`
 const Navbar = () => {
   const theme = useTheme();
   const desktop = useMediaQuery(theme.breakpoints.up('md'));
-  const [open, setOpen] = useState(false);
+
   return (
     <NavbarWrapper>
       <Container>
@@ -55,7 +55,7 @@ const Navbar = () => {
                 </a>
               </>
             ) : (
-              <HamburgerMenu open={open} setOpen={setOpen} />
+              <HamburgerMenu />
             )}
           </NavItemsList>
         </NavbarHeader>

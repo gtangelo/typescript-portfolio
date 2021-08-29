@@ -10,7 +10,7 @@ const Path = (props: MotionProps & PathProps) => (
   <motion.path
     fill="transparent"
     strokeWidth="3"
-    stroke="hsl(0, 0%, 18%)"
+    stroke="var(--black)"
     strokeLinecap="round"
     {...props}
   />
@@ -46,33 +46,8 @@ interface HamburgerMenuToggleProps {
 
 const HamburgerMenuToggle = ({ open, setOpen }: HamburgerMenuToggleProps) => {
   return (
-    // <MenuSvg viewBox="0 0 46 46" >
-    //   <Path
-    //     variants={{
-    //       closed: { d: 'M 4 5 L 40 5' },
-    //       open: { d: 'M 6 33 L 34 5' },
-    //     }}
-    //     animate={open ? 'open' : 'closed'}
-    //   />
-    //   <Path
-    //     d="M 4 18.846 L 40 18.846"
-    //     variants={{
-    //       closed: { opacity: 1 },
-    //       open: { opacity: 0 },
-    //     }}
-    //     transition={{ duration: 0.1 }}
-    //     animate={open ? 'open' : 'closed'}
-    //   />
-    //   <Path
-    //     variants={{
-    //       closed: { d: 'M 4 32.692 L 40 32.692' },
-    //       open: { d: 'M 6 5 L 34 32.692' },
-    //     }}
-    //     animate={open ? 'open' : 'closed'}
-    //   />
-    // </MenuSvg>
     <MenuButton onClick={() => setOpen((prevState) => !prevState)}>
-      <svg width="23" height="23" viewBox="0 0 23 23" preserveAspectRatio="xMaxYMax meet">
+      <svg width="23" height="23" viewBox="0 0 20 20">
         <Path
           variants={{
             closed: { d: 'M 2 2.5 L 20 2.5' },

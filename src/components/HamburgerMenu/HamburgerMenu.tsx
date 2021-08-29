@@ -1,5 +1,5 @@
 import ROUTES from 'data/routes';
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTheme, useMediaQuery, Box } from '@material-ui/core';
@@ -36,14 +36,10 @@ const HamburgerItemsList = styled.ul`
   margin: 0;
 `;
 
-interface HamburgerMenuProps {
-  open: boolean;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const HamburgerMenu = ({ open, setOpen }: HamburgerMenuProps) => {
+const HamburgerMenu = () => {
   const theme = useTheme();
   const desktop = useMediaQuery(theme.breakpoints.up('md'));
+  const [open, setOpen] = useState(false);
 
   return (
     <div>

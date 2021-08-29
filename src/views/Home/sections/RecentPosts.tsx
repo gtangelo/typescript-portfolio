@@ -22,14 +22,14 @@ const BlogPostsWrapper = styled.div`
   }
 `;
 
-const RecentPostsSection: React.FC = () => {
+const RecentPosts = () => {
   return (
     <Container>
       <TitleHeader title="Recent Blog Posts" />
       <BlogPostsWrapper>
-        {new Array(3).fill(0).map(() => (
+        {/* {new Array(3).fill(0).map(() => (
           <BlogCard key="test" />
-        ))}
+        ))} */}
       </BlogPostsWrapper>
       <Box pb={7} pt={3} display="flex" justifyContent="center">
         <Button>Show More</Button>
@@ -38,4 +38,4 @@ const RecentPostsSection: React.FC = () => {
   );
 };
 
-export default RecentPostsSection;
+export default RecentPosts;

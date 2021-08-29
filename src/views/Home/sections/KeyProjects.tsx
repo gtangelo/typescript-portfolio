@@ -9,7 +9,7 @@ const HighlighSection = styled.section`
   padding: 30px 0;
 `;
 
-const SelectedProjectsSection: React.FC = () => {
+const KeyProjects = () => {
   return (
     <HighlighSection>
       <Container>
@@ -36,4 +36,4 @@ const SelectedProjectsSection: React.FC = () => {
   );
 };
 
-export default SelectedProjectsSection;
+export default KeyProjects;

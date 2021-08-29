@@ -1,5 +1,6 @@
 import { Container, Typography } from '@material-ui/core';
 import Button from 'components/Button';
+import { motion } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
@@ -35,7 +36,7 @@ const HeroBtns = styled.div`
   }
 `;
 
-const HeroSection: React.FC = () => {
+const Hero = () => {
   return (
     <HeroSectionBg>
       <Container>
@@ -76,4 +77,4 @@ const HeroSection: React.FC = () => {
   );
 };
 
-export default HeroSection;
+export default Hero;

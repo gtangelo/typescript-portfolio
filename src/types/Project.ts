@@ -1,9 +1,6 @@
-export type Category = {
-  title: string;
-  colour: string;
-};
+import Category from 'types/Category';
 
-export type Project = {
+type Project = {
   title: string;
   description: string;
   img: string;
@@ -12,3 +9,5 @@ export type Project = {
   github?: string;
   deploy?: string;
 };
+
+export default Project;

@@ -12,7 +12,7 @@ const FooterWrapper = styled.div`
   width: 100%;
 `;
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <FooterBg>
       <Container>

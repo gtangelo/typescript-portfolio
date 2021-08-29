@@ -1,7 +1,7 @@
 import React from 'react';
 import PageTemplate from 'templates/PageTemplate';
 
-const BlogPage: React.FC = () => {
+const BlogPage = () => {
   return <PageTemplate />;
 };
 

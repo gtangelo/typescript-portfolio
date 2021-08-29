@@ -24,53 +24,51 @@ let theme = createTheme({
     ].join(','),
     h1: {
       fontFamily: headingFont,
-      fontSize: '3.3rem',
-      // fontWeight: 'bold',
+      fontSize: '4.5rem',
+      fontWeight: 'bold',
       textTransform: 'uppercase',
     },
     h2: {
       fontFamily: headingFont,
-      fontSize: '2.2rem',
-      // fontWeight: 'bold',
+      fontSize: '3.2rem',
+      fontWeight: 'bold',
       textTransform: 'uppercase',
     },
     h3: {
       fontFamily: headingFont,
-      fontSize: '2rem',
-      // fontWeight: 'bold',
+      fontSize: '2.3rem',
+      fontWeight: 'bold',
       textTransform: 'uppercase',
-      marginBottom: '35px',
     },
     h4: {
       fontFamily: headingFont,
       fontSize: '1.7rem',
-      // fontWeight: 'bold',
+      fontWeight: 'bold',
       textTransform: 'uppercase',
     },
     h5: {
       fontFamily: headingFont,
       fontSize: '1.5rem',
-      // fontWeight: 'bold'
+      fontWeight: 'bold',
     },
     h6: {
       fontFamily: headingFont,
-      fontSize: '1.2rem',
-      // fontWeight: 'bold'
+      fontSize: '1rem',
+      fontWeight: 'bold',
     },
     subtitle1: {
       fontFamily: bodyFont,
-      fontSize: '1.1rem',
-      fontWeight: 'bold',
+      fontSize: '1rem',
     },
     subtitle2: {
       fontFamily: bodyFont,
-      fontSize: '1rem',
+      fontSize: '0.8rem',
     },
     body1: {
       fontFamily: bodyFont,
       fontWeight: 500,
       fontSize: '1rem',
-      marginBottom: '5px',
+      marginBottom: '15px',
     },
     body2: {
       fontFamily: bodyFont,
@@ -83,7 +81,7 @@ let theme = createTheme({
 
 theme = responsiveFontSizes(theme);
 
-const ThemeProvider: React.FC = ({ children }) => {
+const ThemeProvider = ({ children }) => {
   return <Provider theme={theme}>{children}</Provider>;
 };
 

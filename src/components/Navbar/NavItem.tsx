@@ -12,7 +12,7 @@ const NavItemWrapper = styled.li`
   list-style: none;
 `;
 
-const NavItem: React.FC<NavItemProps> = ({ name, href }) => {
+const NavItem = ({ name, href }: NavItemProps) => {
   return (
     <NavItemWrapper>
       <Link to={href}>

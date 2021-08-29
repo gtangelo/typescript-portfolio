@@ -21,7 +21,9 @@ interface BlogCardProps {
   categories: string[];
 }
 
-const BlogCard: React.FC<BlogCardProps> = () => {
+const BlogCard = ({
+  title, description, href, categories,
+}: BlogCardProps) => {
   return (
     <CardWrapper>
       <Typography variant="h5">Title</Typography>

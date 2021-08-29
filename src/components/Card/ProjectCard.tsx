@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { Link } from 'gatsby';
-import { Category } from 'types/ProjectCategory';
+import Category from 'types/Category';
 
 const CardWrapper = styled.div`
   width: 100%;
@@ -70,11 +70,11 @@ interface ProjectCardProps {
   github?: string;
   deploy?: string;
   img: string;
-  link?: string;
+  link: '';
   position: number;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCard = ({
   title,
   description,
   github,
@@ -83,12 +83,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   categories,
   position,
   link,
-}) => {
+}: ProjectCardProps) => {
   return (
     <CardWrapper>
       <Grid container direction={position % 2 ? 'row-reverse' : 'row'}>
         <Grid item md={7} sm={7} xs={12}>
-          <Link to={link && link}>
+          <Link to={link}>
             <CardImg src={img} alt={title} />
           </Link>
         </Grid>

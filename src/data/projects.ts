@@ -3,7 +3,8 @@ import flockr from 'assets/images/projects/flockr.png';
 import portfolio from 'assets/images/projects/portfolio.png';
 import secsoc from 'assets/images/projects/secsoc.png';
 import enactus from 'assets/images/projects/enactus.png';
-import { Category, Project } from 'types/ProjectCategory';
+import Category from 'types/Category';
+import Project from 'types/Project';
 
 const REACTJS: Category = {
   title: 'ReactJS',

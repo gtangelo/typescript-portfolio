@@ -1,23 +1,23 @@
-import HeroSection from 'views/Home/HeroSection';
 import React from 'react';
 import PageTemplate from 'templates/PageTemplate';
 import { Box } from '@material-ui/core';
-import SelectedProjectsSection from './SelectedProjectsSection';
-// import RecentPostsSection from './RecentPostsSection';
-import AboutMeSection from './AboutMeSection';
+import Hero from './sections/Hero';
+import AboutMe from './sections/AboutMe';
+import KeyProjects from './sections/KeyProjects';
+// import RecentPosts from './RecentPosts';
 
-const HomePage: React.FC = () => {
+const HomePage = () => {
   return (
     <PageTemplate>
-      <HeroSection />
+      <Hero />
       <Box id="about">
-        <AboutMeSection />
+        <AboutMe />
       </Box>
       <Box id="projects">
-        <SelectedProjectsSection />
+        <KeyProjects />
       </Box>
       {/* <Box id="blog">
-        <RecentPostsSection />
+        <RecentPosts />
       </Box> */}
     </PageTemplate>
   );

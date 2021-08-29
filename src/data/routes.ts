@@ -7,10 +7,14 @@ const ROUTES = [
     name: 'Projects',
     href: '/#projects',
   },
-  // {
-  //   name: 'Blog',
-  //   href: '/#blog',
-  // },
+  {
+    name: 'Blog',
+    href: '/#blog',
+  },
+  {
+    name: 'About',
+    href: '/#about',
+  },
 ];
 
 export default ROUTES;

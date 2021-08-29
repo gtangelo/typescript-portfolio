@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Container, Typography } from '@material-ui/core';
 import PageTemplate from 'templates/PageTemplate';
 
-const TypographyView: React.FC = () => {
+const TypographyView = () => {
   return (
     <PageTemplate>
       <Container>

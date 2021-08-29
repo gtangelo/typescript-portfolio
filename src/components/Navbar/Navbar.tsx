@@ -1,9 +1,10 @@
 import { Link } from 'gatsby';
 import Button from 'components/Button';
 import ROUTES from 'data/routes';
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Container } from '@material-ui/core';
+import { Container, useTheme, useMediaQuery } from '@material-ui/core';
+import HamburgerMenu from 'components/HamburgerMenu';
 import NavItem from './NavItem';
 
 const NavbarWrapper = styled.header`
@@ -32,7 +33,10 @@ const NavItemsList = styled.ul`
   }
 `;
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
+  const theme = useTheme();
+  const desktop = useMediaQuery(theme.breakpoints.up('md'));
+  const [open, setOpen] = useState(false);
   return (
     <NavbarWrapper>
       <Container>
@@ -41,12 +45,18 @@ const Navbar: React.FC = () => {
             <img src="/favicon.ico" alt="logo" width="40px" />
           </Link>
           <NavItemsList>
-            {ROUTES.map((route) => (
-              <NavItem name={route.name} href={route.href} key={route.name} />
-            ))}
-            <a download href="/resume.pdf">
-              <Button>Resume</Button>
-            </a>
+            {desktop ? (
+              <>
+                {ROUTES.map((route) => (
+                  <NavItem name={route.name} href={route.href} key={route.name} />
+                ))}
+                <a download href="/resume.pdf">
+                  <Button>Resume</Button>
+                </a>
+              </>
+            ) : (
+              <HamburgerMenu open={open} setOpen={setOpen} />
+            )}
           </NavItemsList>
         </NavbarHeader>
       </Container>

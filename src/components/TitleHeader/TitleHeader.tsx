@@ -26,7 +26,7 @@ const Header = styled.h2`
   }
 `;
 
-const TitleHeader: React.FC<TitleHeaderProps> = ({ title }) => {
+const TitleHeader = ({ title }: TitleHeaderProps) => {
   return <Header>{title}</Header>;
 };
 

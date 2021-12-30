@@ -1,20 +1,16 @@
 const ROUTES = [
   {
     name: 'About',
-    href: '/#about',
+    href: 'about',
   },
   {
     name: 'Projects',
-    href: '/#projects',
+    href: 'projects',
   },
-  {
-    name: 'Blog',
-    href: '/#blog',
-  },
-  {
-    name: 'About',
-    href: '/#about',
-  },
+  // {
+  //   name: 'Blog',
+  //   href: '/#blog',
+  // },
 ];
 
 export default ROUTES;

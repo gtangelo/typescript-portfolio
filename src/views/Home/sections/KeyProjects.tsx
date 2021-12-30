@@ -11,7 +11,7 @@ const HighlighSection = styled.section`
 
 const KeyProjects = () => {
   return (
-    <HighlighSection>
+    <HighlighSection id="projects">
       <Container>
         <TitleHeader title="Selected Projects" />
       </Container>

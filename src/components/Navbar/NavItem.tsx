@@ -1,5 +1,5 @@
 import { Typography } from '@material-ui/core';
-import { Link } from 'gatsby';
+import { Link } from 'react-scroll';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -15,7 +15,7 @@ const NavItemWrapper = styled.li`
 const NavItem = ({ name, href }: NavItemProps) => {
   return (
     <NavItemWrapper>
-      <Link to={href}>
+      <Link to={href} spy smooth duration={1200}>
         <Typography variant="h6">{name}</Typography>
       </Link>
     </NavItemWrapper>

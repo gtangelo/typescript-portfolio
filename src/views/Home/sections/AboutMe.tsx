@@ -20,7 +20,7 @@ const AboutMeInfo = styled.div`
 
 const AboutMe = () => {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" id="about">
       <AboutMeGrid container>
         <Grid item md={8} xs={12}>
           <AboutMeInfo>

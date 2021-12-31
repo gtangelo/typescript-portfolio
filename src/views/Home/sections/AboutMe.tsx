@@ -26,14 +26,15 @@ const AboutMe = () => {
           <AboutMeInfo>
             <TitleHeader title="About Me" />
             <Typography variant="body1">
-              Hello! I'm Gabriel, currently a penultimate year computer science student and I'm
-              passionate in areas of full stack development and security.
+              Hello! I'm Gabriel, a penultimate year computer science student. I'm
+              passionate in areas of full stack development and security. Currently, I'm working as
+              a full time Junior Software Engineer at a startup called Particular Audience.
             </Typography>
             <Typography variant="body1">
               Apart from my academic achievements, I actively engage in a wide range of personal and
-              professional development opportunities throughout my study at UNSW. Currently, I am
-              the UNSW Security Society Projects Director and part of the Socials portfolio at the
-              UNSW Data Science Society.
+              professional development opportunities throughout my study at UNSW. Throughout my past
+              university experiences, I volunteered my time at societies such as being Projects
+              Director at the UNSW Security Society in 2021.
             </Typography>
             <Typography variant="body1">
               Otherwise, in my spare time, I am passionate to explore further what computer science

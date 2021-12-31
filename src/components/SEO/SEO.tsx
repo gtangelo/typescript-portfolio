@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { graphql, useStaticQuery } from 'gatsby';
+import { useLocation } from '@reach/router';
 
 interface SEOStaticQueryProps {
   site: {
@@ -32,11 +33,12 @@ interface SEOProps {
 const SEO = ({ title = '', description = '' }: SEOProps) => {
   const { site } = useStaticQuery<SEOStaticQueryProps>(SEOStaticQuery);
   const { siteUrl, description: defaultDescription } = site.siteMetadata;
+  const { pathname } = useLocation();
 
   const seo = {
     title,
     description: description || defaultDescription,
-    url: `${siteUrl}${window.location.pathname}`,
+    url: `${siteUrl}${pathname}`,
     titleTemplate: title ? `%s | ${title}` : `${site.siteMetadata.title}`,
   };
 

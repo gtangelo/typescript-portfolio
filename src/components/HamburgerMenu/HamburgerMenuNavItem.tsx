@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'gatsby';
+import { Link } from 'react-scroll';
 import { Typography } from '@material-ui/core';
 import styled from 'styled-components';
 
@@ -29,12 +29,13 @@ const NavItemWrapper = styled.li`
 interface HamburgerMenuNavItemProps {
   name: string;
   href: string;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const HamburgerMenuNavItem = ({ name, href }: HamburgerMenuNavItemProps) => {
+const HamburgerMenuNavItem = ({ name, href, setOpen }: HamburgerMenuNavItemProps) => {
   return (
     <NavItemWrapper as={motion.li} variants={navItemVariants}>
-      <Link to={href}>
+      <Link to={href} spy smooth duration={1200} onClick={() => setOpen((prevState) => !prevState)}>
         <Typography variant="h5">{name}</Typography>
       </Link>
     </NavItemWrapper>

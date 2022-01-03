@@ -50,7 +50,7 @@ const PROJECTS: Project[] = [
   {
     title: 'Traceback - Chrome Extension',
     description:
-      'Traceback is a Google Chrome extension which records the time user spends on different tasks. The purpose of this extension is to track and analyse hours spent on web browser tasks to improve overall productivity. This chrome extension was build using ReactJS alongside using various Amazon Web Services such as AWS Lambda, Amazon API Gateway and Amazon DynamoDB.',
+      'Traceback is a Google Chrome extension which records the time user spends on different tasks. The purpose of this extension is to track and analyse hours spent on web browser tasks to improve overall productivity. This chrome extension was build using ReactJS alongside various Amazon Web Services such as AWS Lambda, Amazon API Gateway and Amazon DynamoDB.',
     img: traceback,
     categories: [REACTJS, FRONTEND, BACKEND],
     link: '',
@@ -59,7 +59,7 @@ const PROJECTS: Project[] = [
   },
   {
     title: 'UNSW Security Society Website',
-    description: 'One of my visions as the 2021 Projects Director for the UNSW Security Society was to overhaul the society\'s website to adopt a modern UI/UX design and refactor the codebase to use an updated technology stack (ReactJS/Typescript). Alongside with my projects subcommittee, we spearheaded the development of a new website with a focus on modern UI/UX design principles and improving the user experience. The website also utilise Google Cloud Platform services to provide a serverless backend.',
+    description: 'One of my visions as the 2021 Projects Director for the UNSW Security Society was to overhaul the society\'s website to adopt a modern UI/UX design and refactor the codebase to use an updated technology stack (ReactJS/Typescript). Alongside with my Projects subcommittee, we spearheaded the development of a new website with a focus on modern UI/UX design principles and improving the user experience. The website also utilise Google Cloud Platform services to provide a serverless backend.',
     img: secsoc,
     categories: [REACTJS, UX_UI_DESIGN, FRONTEND],
     deploy: 'https://unswsecurity.com/',
@@ -67,7 +67,7 @@ const PROJECTS: Project[] = [
   },
   {
     title: 'Enactus UNSW Website',
-    description: "My contributions as part of the IT subcommittee for the Enactus UNSW Society in 2020-2021 transformed the website to better reflect the society's values and mission on social impact and entrepreneurship. My contributions involved developing and maintaining the codebase using ReactJS and Typescript whilst also collaborating closely with different project teams and internal portfolios to best determine how to reflect the society's brand image and vision.",
+    description: "My contributions as part of the IT subcommittee for the Enactus UNSW Society in 2020-2021 transformed the website to better reflect the society's values and mission on social impact and entrepreneurship. This involves developing and maintaining the codebase using ReactJS and Typescript whilst also collaborating closely with different project teams and internal portfolios to best determine how to reflect the society's brand image and vision.",
     img: enactus,
     categories: [REACTJS, UX_UI_DESIGN, FRONTEND],
     deploy: 'https://enactusunsw.org/',

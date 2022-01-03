@@ -61,7 +61,12 @@ const HamburgerMenu = () => {
               exit="closed"
             >
               {ROUTES.map((route) => (
-                <HamburgerMenuNavItem key={route.name} name={route.name} href={route.href} />
+                <HamburgerMenuNavItem
+                  key={route.name}
+                  name={route.name}
+                  href={route.href}
+                  setOpen={setOpen}
+                />
               ))}
               <Box px={3} component={motion.li}>
                 <a download href="/resume.pdf">

@@ -28,5 +28,26 @@ module.exports = {
     `gatsby-plugin-sharp`,
     'gatsby-plugin-eslint',
     `gatsby-theme-material-ui`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog/`,
+        name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 630,
+            },
+          },
+          `gatsby-remark-relative-images`,
+        ],
+      },
+    },
   ],
 };

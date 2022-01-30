@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from '@material-ui/core';
+import { Container, Grid, Typography } from '@mui/material';
 import TitleHeader from 'components/TitleHeader';
 import React from 'react';
 import styled from 'styled-components';

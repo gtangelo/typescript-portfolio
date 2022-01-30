@@ -2,7 +2,7 @@ import ROUTES from 'data/routes';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useTheme, useMediaQuery, Box } from '@material-ui/core';
+import { useTheme, useMediaQuery, Box } from '@mui/material';
 import Button from 'components/Button';
 import HamburgerMenuNavItem from './HamburgerMenuNavItem';
 import HamburgerMenuToggle from './HamburgerMenuToggle';

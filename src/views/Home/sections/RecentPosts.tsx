@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container } from '@material-ui/core';
+import { Box, Container } from '@mui/material';
 import Button from 'components/Button';
 import { BlogCard } from 'components/Card/';
 import TitleHeader from 'components/TitleHeader';

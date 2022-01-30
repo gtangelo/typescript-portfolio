@@ -3,7 +3,7 @@ import {
   ThemeProvider as Provider,
   createTheme,
   responsiveFontSizes,
-} from '@material-ui/core/styles';
+} from '@mui/material/styles';
 
 const headingFont = 'sans-serif';
 const bodyFont = 'sans-serif';

@@ -3,7 +3,7 @@ import Button from 'components/Button';
 import ROUTES from 'data/routes';
 import React from 'react';
 import styled from 'styled-components';
-import { Container, useTheme, useMediaQuery } from '@material-ui/core';
+import { Container, useTheme, useMediaQuery } from '@mui/material';
 import HamburgerMenu from 'components/HamburgerMenu';
 import NavItem from './NavItem';
 

@@ -1,6 +1,5 @@
-import { Container, Typography } from '@material-ui/core';
+import { Container, Typography } from '@mui/material';
 import Button from 'components/Button';
-import { motion } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';

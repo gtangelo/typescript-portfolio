@@ -10,11 +10,10 @@ html,
   box-sizing: border-box;
 }
 
-html,
 body {
   min-height: 100vh;
-  background-color: #001a33;
-  color: #d5dae7;
+  background-color: #001a33 !important;
+  color: #d5dae7 !important;
   font-family: sans-serif;
 }
 

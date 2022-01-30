@@ -1,6 +1,6 @@
 import React from 'react';
 import PageTemplate from 'templates/PageTemplate';
-import { Box } from '@material-ui/core';
+import { Box } from '@mui/material';
 import Hero from './sections/Hero';
 import AboutMe from './sections/AboutMe';
 import KeyProjects from './sections/KeyProjects';

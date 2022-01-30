@@ -1,4 +1,4 @@
-import { Box, Container } from '@material-ui/core';
+import { Box, Container } from '@mui/material';
 import { ProjectCard } from 'components/Card';
 import TitleHeader from 'components/TitleHeader';
 import React from 'react';

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import { Container } from '@material-ui/core';
+import { Container } from '@mui/material';
 import PageTemplate from './PageTemplate';
 
 const BlogPostTemplate = ({ data, location }) => { // eslint-disable-line

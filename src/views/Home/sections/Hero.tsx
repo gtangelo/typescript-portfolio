@@ -59,8 +59,8 @@ const Hero = () => {
           </HeroTypewriter>
           <HeroBio>
             <Typography variant="subtitle1">
-              I am a UNSW computer science student in my penultimate year aspiring to become as a
-              fullstack software engineer!
+              I am a final year UNSW computer science student with the skillset
+              of a frontend software engineer!
             </Typography>
           </HeroBio>
           <HeroBtns>

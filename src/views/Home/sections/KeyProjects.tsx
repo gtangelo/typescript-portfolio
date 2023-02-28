@@ -16,7 +16,7 @@ const KeyProjects = () => {
         <TitleHeader title="Selected Projects" />
       </Container>
       <Container>
-        {PROJECTS.slice(0, 3).map((project, index) => (
+        {PROJECTS.map((project, index) => (
           <Box my={4} key={project.title}>
             <ProjectCard
               key={project.title}
@@ -27,7 +27,6 @@ const KeyProjects = () => {
               categories={project.categories}
               github={project.github}
               deploy={project.deploy}
-              link={project.link}
             />
           </Box>
         ))}

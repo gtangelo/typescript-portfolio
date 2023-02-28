@@ -70,7 +70,6 @@ interface ProjectCardProps {
   github?: string;
   deploy?: string;
   img: string;
-  link: '';
   position: number;
 }
 
@@ -82,7 +81,6 @@ const ProjectCard = ({
   img,
   categories,
   position,
-  link,
 }: ProjectCardProps) => {
   return (
     <CardWrapper>
@@ -113,11 +111,6 @@ const ProjectCard = ({
                 <a href={deploy} target="_blank" rel="noreferrer">
                   <FaExternalLinkAlt size="1.8rem" />
                 </a>
-              )}
-              {link && (
-                <Link to={link}>
-                  <FaInfoCircle size="1.8rem" />
-                </Link>
               )}
             </CardExternalLinks>
           </CardContent>

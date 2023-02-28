@@ -26,21 +26,32 @@ const AboutMe = () => {
           <AboutMeInfo>
             <TitleHeader title="About Me" />
             <Typography variant="body1">
-              Hello! I'm Gabriel, a penultimate year computer science student. I'm
-              passionate in areas of full stack development and security. Currently, I'm working as
-              a full time Junior Software Engineer at a startup called Particular Audience.
+              Hello! I'm Gabriel, a final year computer science student. My expertise
+              lies in frontend development, however I'm also curious in areas of full stack
+              web dev! My work experience is broad ranging from working for small businesses,
+              startups and big tech companies!
             </Typography>
             <Typography variant="body1">
-              Apart from my academic achievements, I actively engage in a wide range of personal and
-              professional development opportunities throughout my study at UNSW. Throughout my past
-              university experiences, I volunteered my time at societies such as being Projects
-              Director at the UNSW Security Society in 2021.
-            </Typography>
-            <Typography variant="body1">
-              Otherwise, in my spare time, I am passionate to explore further what computer science
-              has to offer by watching various videos on different programming topics on the
-              internet. Furthermore, I love exploring new places around Sydney, whether it be hiking
-              or trying new restaurants to eat at!
+              I also am passionate in enaging within my university community through student
+              run societies. In 2021, I was the Projects Director at the UNSW Security Society
+              where I was involved revamping their&nbsp;
+              <strong>
+                <a href="https://unswsecurity.com/" target="_blank" rel="noopener noreferrer">website</a>
+              </strong>
+              &nbsp;and maintaing their cloud infrastructure. In more recent years, I have been
+              involved within UNSW CSESoc Development as one of their Projects Directors for&nbsp;
+              <strong>
+                <a href="https://circles.csesoc.app/" target="_blank" rel="noopener noreferrer">
+                  Circles
+                </a>
+              </strong>
+              &nbsp;and&nbsp;
+              <strong>
+                <a href="https://jobsboard.csesoc.unsw.edu.au/" target="_blank" rel="noopener noreferrer">
+                  Jobsboard
+                </a>
+              </strong>
+              !
             </Typography>
           </AboutMeInfo>
         </Grid>
